@@ -1,19 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int n,b;
     scanf("%d",&n);
-    if(n<=9)
-    {
-        printf("%d",n);
-    }
-    else if(n%9==0)
-    {
-            printf("%d",9);
-        
-    }
-    else
-    {
-        printf("%d",n%9);
-    }
+    b=n%9;
+    printf("%d",b);
 }
