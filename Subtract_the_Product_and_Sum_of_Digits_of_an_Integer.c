@@ -1,14 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int i,n=0,m=0,j=1;
-    scanf("%d",&i);
-    while(i!=0)
+    int n,q,r,s=0,p=1,diff;
+    scanf("%d",&n);
+    q=n;
+    while(q!=0)
     {
-        m=i%10;
-        n=n+m;
-        j=j*m;
-        i/=10;
+        r=q%10;
+        p=p*r;
+        s=s+r;
+        q=q/10;
     }
-    printf("%d",j-n);
+    diff=p-s;
+    printf("%d",diff);
 }
